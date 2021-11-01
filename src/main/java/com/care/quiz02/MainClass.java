@@ -13,7 +13,7 @@ public class MainClass {
 		
 		sc.setNum1(10);
 		sc.setNum2(2);
-		sc.setOp("*");
+		sc.setOp("/");
 		
 		sc.operationClass();
 		sc.printClass();

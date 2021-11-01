@@ -12,6 +12,7 @@ public class SaveClass {
 	}
 	
 	public void printClass() {
+		//operationClass();
 		pc.printFunc(num1,op,num2,result);
 	}
 	
