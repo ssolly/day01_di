@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 객체 생성 -->
+	<bean id="st01" class="com.care.root02.Student" /> <!-- class=경로 -->
+	<bean id="stb" class="com.care.root02.STBean" > 
+		<!-- STBean이 가지고 있는 변수에 설정, setter가 있어야 설정 가능 -->
+		<property name="st" ref="st01"/> <!-- stb와 st01 연결, STBean 내에 있는 setSt()에 -->
+										 <!-- Student st01 = new Student();
+			 								  STBean stBean = new STBean();
+			 								  stBean.setSt(st01);           java코드-->
+		<property name="name">
+			<value> 임꺽정 </value>
+		</property>
+		<property name="age" value="30"/>
+	</bean>
+	
+</beans>
